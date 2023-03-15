@@ -321,12 +321,12 @@ local function page2()
     context.gpu.setActiveBuffer(infoPanel)
     local secondPage = {
         {text = "The available filters are as follows:", color = gui.primaryColor()},
-        {text = "1: Macerator -> Centrifuge -> Out"},
-        {text = "2: Washing -> Recycle"},
-        {text = "3: Thermal Centrifuge -> Macerator -> Out"},
-        {text = "4: Hammer -> Recycle"},
-        {text = "5: Smelting -> Out"},
-        {text = "6: Sifting -> Out"},
+        {text = "1: primary output (macerate-centrifuge-output)"},
+        {text = "2: purify with orewasher (orewash-recycle)"},
+        {text = "3: purify with chembath with mercury (chembath-recycle)"},
+        {text = "4: tertiary output (thermal centrifuge-macerate-output)"},
+        {text = "5: primary-smelt (smelt-macerate-package-output)"},
+        {text = "6: sift (sift-output)"},
         {text = "7: special (special)"},
         {text = "8: excess/no filter (output)"},
         {}, 
@@ -334,7 +334,7 @@ local function page2()
         {text = "\"Output\" means the item is sent to your ME system, etc.", color = gui.primaryColor()},
         {},
         {text = "The outputs can be customized to your liking if you wish."},
-        {text = "Already edited by Blade8895"},
+        {},
         {text = "It is recommended that you prioritize the recycled items"},
         {text = "over newly incoming ones."}
     }
