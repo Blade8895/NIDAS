@@ -3,7 +3,8 @@ local C = require("component"); local screen = require("term"); local event = re
 
 local S = require("serialization")
 gpu = C.gpu
-gpu.fill(1, 1, 80, 25, " ")
+gpu.setResolution(50,35) --GPU Tier 2
+gpu.fill(1, 1, 50, 35, " ")
 local categoryID = 1; local taskID = 1; local categoryAddY = 0; local editing = false; local editableData = {}
 local categoryColor = 0xFF00FF
 local taskColor = 0xFFFF00
